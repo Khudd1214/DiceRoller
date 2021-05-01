@@ -1,14 +1,14 @@
 //need a function to generate a random number between 1-6
 
 function d6 () {
-	x = Number(Math.ceil(Math.random() * 6))
+	const x = Number(Math.ceil(Math.random() * 6))
 	return x;
 }
 //need a function that will display the proper dice image for the number generated.
 
 function callDiceImage (playerRoll, player) {
-	var target = document.getElementsByClassName("imageContainer")[0];
-	var newImage = document.createElement("img");
+	const target = document.getElementsByClassName("imageContainer")[0];
+	const newImage = document.createElement("img");
 	switch (playerRoll) {
 		case 1:
 			target.appendChild(newImage);
@@ -41,7 +41,7 @@ function displayWinner(player1roll, player2roll) {
 	//alert(typeof(player1roll));
 	//alert(typeof(player2roll));
 	if (player1roll > player2roll) {
-		var newText = document.createElement("h2");
+		let newText = document.createElement("h2");
 		document.getElementsByClassName("headerText")[0].appendChild(newText);
 		document.getElementsByTagName("h2")[0].textContent = "Player 1 Wins!";
 	} else if (player1roll < player2roll) {
@@ -56,8 +56,8 @@ function displayWinner(player1roll, player2roll) {
 }
 
 //execute code
-var player1roll = d6();
+let player1roll = d6();
 callDiceImage(player1roll, 0);
-var player2roll = d6();
+let player2roll = d6();
 callDiceImage(player2roll, 1);
 displayWinner(player1roll, player2roll);
