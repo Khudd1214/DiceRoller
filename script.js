@@ -12,27 +12,27 @@ function callDiceImage (playerRoll, player) {
 	switch (playerRoll) {
 		case 1:
 			target.appendChild(newImage);
-			document.getElementsByTagName("img")[player].setAttribute("src", "../images/dice1.png");
+			document.getElementsByTagName("img")[player].setAttribute("src", "images/dice1.png");
 			break;
 		case 2:
 			target.appendChild(newImage);
-			document.getElementsByTagName("img")[player].setAttribute("src", "../images/dice2.png");
+			document.getElementsByTagName("img")[player].setAttribute("src", "images/dice2.png");
 			break;
 		case 3:
 			target.appendChild(newImage);
-			document.getElementsByTagName("img")[player].setAttribute("src", "../images/dice3.png");
+			document.getElementsByTagName("img")[player].setAttribute("src", "images/dice3.png");
 			break;
 		case 4:
 			target.appendChild(newImage);
-			document.getElementsByTagName("img")[player].setAttribute("src", "../images/dice4.png");
+			document.getElementsByTagName("img")[player].setAttribute("src", "images/dice4.png");
 			break;
 		case 5:
 			target.appendChild(newImage);
-			document.getElementsByTagName("img")[player].setAttribute("src", "../images/dice5.png");
+			document.getElementsByTagName("img")[player].setAttribute("src", "images/dice5.png");
 			break;
 		case 6:
 			target.appendChild(newImage);
-			document.getElementsByTagName("img")[player].setAttribute("src", "../images/dice6.png");
+			document.getElementsByTagName("img")[player].setAttribute("src", "images/dice6.png");
 	}
 }
 
